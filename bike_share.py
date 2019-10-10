@@ -7,6 +7,7 @@ import time
 # chicago = 'chicago.csv'
 # new_york_city = 'new_york_city.csv'
 # washington = 'washington.csv'
+## end of data file names
 
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
@@ -237,7 +238,7 @@ def run_statistics():
             filter_lower, filter_upper = get_day_of_week()
         print('Filtering data...')
         df_filtered = df[(df['start_time'] >= filter_lower) & (df['start_time'] < filter_upper)]
-    print('\nCalculating the first statistic...')
+    print('\nCalculating the first statistic.')
 
     if time_period == 'none':
         start_time = time.time()
